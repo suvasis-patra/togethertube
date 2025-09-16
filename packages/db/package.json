@@ -6,17 +6,17 @@
     "build": "tsc"
   },
   "exports": {
-    "./add": {
-      "types": "./src/add.ts",
-      "default": "./dist/add.js"
-    },
-    "./subtract": {
-      "types": "./src/subtract.ts",
-      "default": "./dist/subtract.js"
+    "./prisma": {
+      "types": "./src/index.ts",
+      "default": "./dist/index.js"
     }
   },
   "devDependencies": {
     "@togethertube/typescript-config": "*",
+    "prisma": "^6.16.1",
     "typescript": "latest"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.16.1"
   }
 }
